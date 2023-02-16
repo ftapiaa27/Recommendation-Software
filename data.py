@@ -1,16 +1,3 @@
-calisthenics_skills_list = ["Planche", "Front Lever", "Back Lever", "Handstand", "Muscle-up", "Human Flag", "V-Sit", "One-arm Pull-up"]
-
-calisthenics_skills = {
-    "Planche": "A gymnastics move where the body is held parallel to the ground in a horizontal position, supported only by the hands.",
-    "Front Lever": "A gymnastics move where the body is held parallel to the ground in a horizontal position, supported only by the arms.",
-    "Back Lever": "A gymnastics move where the body is held parallel to the ground in a horizontal position, supported only by the arms.",
-    "Handstand": "A skill where the body is inverted and held up with the hands on the ground.",
-    "Muscle-up": "A combination move of a pull-up followed by a dip, where the body is raised up and over a bar or rings.",
-    "Human Flag": "A skill where the body is held horizontally parallel to the ground, supported only by the hands on a vertical pole.",
-    "V-Sit": "A seated position where the body is lifted off the ground, forming a V shape with the legs and torso.",
-    "One-arm Pull-up": "A pull-up performed with only one arm on the bar."
-}
-
 planche_progressions = [
     (1, 'Tuck Planche', 'Start in a push-up position with your hands shoulder-width apart and your fingers pointing forward. Lower your hips and raise your feet, keeping your back straight. Try to hold this position for as long as possible.'),
     (2, 'Advanced Tuck Planche', 'From a tucked position, straighten your legs and lift your hips to create a horizontal line with your body.'),
@@ -82,3 +69,14 @@ muscleup_progressions = [
     (5, "Strict Muscle-up", "Perform a muscle-up with no assistance, relying solely on your upper body strength."),
     (6, "Kipping Muscle-up", "Use a kipping motion to generate momentum to perform the muscle-up.")
 ]
+
+calisthenics_skills = {
+    "Planche": ["A gymnastics move where the body is held parallel to the ground in a horizontal position, supported only by the hands.", planche_progressions],
+    "Front Lever": ["A gymnastics move where the body is held parallel to the ground in a horizontal position, supported only by the arms., ", front_lever_progressions],
+    "Back Lever": ["A gymnastics move where the body is held parallel to the ground in a horizontal position, supported only by the arms.", back_lever_progressions],
+    "Handstand": ["A skill where the body is inverted and held up with the hands on the ground.", handstand_progressions],
+    "Muscle-up": ["A combination move of a pull-up followed by a dip, where the body is raised up and over a bar or rings.", muscleup_progressions],
+    "Human Flag": ["A skill where the body is held horizontally parallel to the ground, supported only by the hands on a vertical pole.", V_Sit_progressions],
+    "V-Sit": ["A seated position where the body is lifted off the ground, forming a V shape with the legs and torso.", Human_Flag_progressions],
+    "One-arm Pull-up": ["A pull-up performed with only one arm on the bar.", One_arm_pull_up_progressions]
+}
