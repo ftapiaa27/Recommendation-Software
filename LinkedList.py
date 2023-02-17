@@ -29,6 +29,7 @@ class LinkedList:
         while(current_node):
             yield current_node.get_value()
             current_node = current_node.get_next_node()
+
     # def stringify_list(self):
     #     string_list = ""
     #     node = self.get_head_node()
@@ -60,14 +61,5 @@ class LinkedList:
                     current_node = None
                 else:
                     current_node = current_next_node
-    
-    def remove_nodes(self, value_to_remove):
-        current_node = self.get_head_node()
-        if current_node.get_value() == value_to_remove:
-            self.head_node = self.head_node.get_next_node()
-        while current_node.get_next_node():
-            current_next_node = current_node.get_next_node()
-            if current_next_node.get_value() == value_to_remove:
-                current_node.set_next_node(current_next_node.get_next_node())
-            else:
-                current_node = current_next_node
+
+            

@@ -3,4 +3,3 @@ def welcome():
     **************************************************************
     Welcome to the calisthenics progression recommendation program
     **************************************************************""")
-
